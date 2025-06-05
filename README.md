@@ -1,39 +1,51 @@
 # 🍕 Pizza-Greedy Method for the Traveling Salesman Problem (TSP)
 
-**Pizza-Greedy Method** is a heuristic approach for solving the classic Traveling Salesman Problem (TSP), inspired by a circular “pizza slice” division of space. It offers a geographically intuitive and computationally efficient solution by combining a radial sector approach with a greedy algorithm inside each sector.
+**Pizza-Greedy** is a heuristic strategy to solve the classic **Traveling Salesman Problem (TSP)**. It divides the map around a central city into pizza-slice-like sectors and applies a greedy approach within each.
 
-## 💡 Concept
+---
 
-The route is based on the following core principles::
+## 💡 Core Idea
 
-1. Define a central city (e.g. Berlin or another geographic center).
-2. Divide the space into radial sectors (like pizza slices), e.g. 6 slices of 60° each.
-3. Process each sector one by one (clockwise or counterclockwise), visiting all cities within using a greedy strategy (nearest neighbor).
-4. Avoid unnecessary backtracking by only moving forward to the next sector once the current one is completed.
-5. Return to the starting city after visiting all reachable cities.
+1. **Choose a central city** (e.g., Berlin or any geographic center).
+2. **Divide space into radial sectors** (e.g., 6 slices of 60° each).
+3. **Visit cities sector by sector**, either clockwise or counterclockwise.
+4. **Greedy within sector**: Choose the nearest unvisited city until the sector is complete.
+5. **Return to start** after all sectors are processed.
+
+---
 
 ## 🗺️ Why Pizza-Greedy?
 
-Visually intuitive – great for geographic TSP problems
-Easy to implement
-Can be adapted to different regions and use cases
-Good balance between route quality and simplicity
+* Visually intuitive – great for geographic TSP problems
+* Easy to implement
+* Can be adapted to different regions and use cases
+* Good balance between route quality and simplicity
 
-## 📦 Installation
+---
 
-No external dependencies – pure Python.
+## ▶️ Example
 
-## ▶️ Verwendung
+Run the demo on the 20 largest cities in Germany:
 
 ```bash
 python3 run_example.py
 ```
 
-Die Beispielausgabe zeigt die berechnete Route und die gesamte zurückgelegte Entfernung in Kilometern.
+You’ll see a reasonable travel route and total distance estimation.
 
-## 📈 Example
+---
 
-The included example solves a route through the 20 largest German cities using the Pizza-Greedy approach.
+## 📦 Installation
+
+No dependencies required:
+
+```bash
+git clone https://github.com/halit-yilmaz/pizza-greedy-tsp.git
+cd pizza-greedy-tsp
+python3 run_example.py
+```
+
+---
 
 ## 📜 License
 
