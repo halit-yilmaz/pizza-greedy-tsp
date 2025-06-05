@@ -21,7 +21,7 @@ Keine externen Bibliotheken erforderlich. Das Projekt basiert vollständig auf d
 ## ▶️ Verwendung
 
 ```bash
-python examples/run_example.py
+python3 run_example.py
 ```
 
 Die Beispielausgabe zeigt die berechnete Route und die gesamte zurückgelegte Entfernung in Kilometern.
